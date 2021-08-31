@@ -1,9 +1,14 @@
+html{scroll-behavior: smooth;}
+#a-propos{margin-bottom: 80px;margin-top: -30px;}
+#experiences{margin-bottom: 65px;margin-top: -30px;}
+#projets{margin-bottom: 65px;margin-top: -30px;}
+#contact{margin-bottom: 65px;margin-top: -30px;}
 body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
 	background-color: #fff;
-	font-family: Roboto;
+	/* font-family: 'FjallaOne'; */
 }
 header{
 	position: absolute;
@@ -42,9 +47,10 @@ header nav ul li a{
 	text-decoration: none;
 	display: block;
 	text-transform: uppercase;
-	font-family: Verdana, Geneva, Tahoma, sans-seri;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	/* font-weight: bold; */
 }
+/* header nav ul li a:active{color: red;} */
 header nav ul li a:hover,
 header nav ul li a.active{
 	color: #fff;
@@ -96,7 +102,13 @@ header nav ul li a.active{
 	background: #007bb5;
 	color: white;
 }
-.icon-contact .bi{color: #007bb5; background-color: rgb(260, 260, 260);padding: 22px;font-size: 20px;border-radius: 70px;}
+.icon-contact .bi{
+	color: #007bb5; 
+	background-color: rgb(260, 260, 260);
+	padding: 22px;
+	font-size: 20px;
+	border-radius: 70px;
+}
 /* form .input[type="email"],.input[type="text"],textarea{box-shadow: none;} */
 .contact .coordonnees,.contact .formulaire{
 	background-color: rgb(245, 245, 245);
@@ -197,6 +209,20 @@ header nav ul li a.active{
 	margin-top: 20px;
 } */
 
+.infos-entreprise .titre-post{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+	color: rgb(105, 105, 105);
+}
+
+/* .section-apropos{margin-top: 25px;border-bottom: 3px solid #000;} */
+
+@font-face {
+	font-family: 'FjallaOne-Regular';
+	src: url('fonts/FjallaOne-Regular.ttf') format('TrueTypeFont');
+}
+
+.modal-body .desc-entreprise{font-size: 14px;}
 
 @media(max-width: 991px){
 	header{
@@ -217,6 +243,7 @@ header nav ul li a.active{
 	header nav.active{
 		left: 0;
 	}
+	
 	header nav ul{
 		display: block;
 		text-align: center;
@@ -228,4 +255,5 @@ header nav ul li a.active{
 		height: 300px;
 	}
 	.contact .coordonnees{max-width: auto;margin-right: 0px!important;margin-bottom: 20px;}
+	.contact .adresse, .contact .email, .contact .telephone{text-align: center;margin-top: 20px;}
 }
