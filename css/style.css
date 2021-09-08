@@ -122,93 +122,6 @@ header nav ul li a.active{
 	font-weight: bold;
 }
 
-/* .section-apropos .h4::before{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 120px;
-	height: 1px;
-	background: #ddd;
-	bottom: 41px;
-	left: calc(50% - 60px);
-}
-.section-experiences .h4::before{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 120px;
-	height: 1px;
-	background: #ddd;
-	bottom: -290px;
-	left: calc(50% - 60px);
-}
-.section-projets .h4::before{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 120px;
-	height: 1px;
-	background: #ddd;
-	bottom: -765px;
-	left: calc(50% - 60px);
-}
-.section-contact .h4::before{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 120px;
-	height: 1px;
-	background: #ddd;
-	bottom: -1205px;
-	left: calc(50% - 60px);
-}
-
-
-.section-apropos .h4::after{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 40px;
-	height: 3px;
-	background: #5cb874;
-	bottom: 40px;
-	left: calc(50% - 20px);
-} 
-.section-experiences .h4::after{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 40px;
-	height: 3px;
-	background: #5cb874;
-	bottom: -291px;
-	left: calc(50% - 20px);
-}
-.section-projets .h4::after{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 40px;
-	height: 3px;
-	background: #5cb874;
-	bottom: -766px;
-	left: calc(50% - 20px);
-}
-.section-contact .h4::after{
-	content: '';
-	position: absolute;
-	display: block;
-	width: 40px;
-	height: 3px;
-	background: #5cb874;
-	bottom: -1206px;
-	left: calc(50% - 20px);
-} */
-
-/* .a-propos .row{
-	margin-top: 20px;
-} */
-
 .infos-entreprise .titre-post{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bold;
@@ -219,10 +132,15 @@ header nav ul li a.active{
 
 @font-face {
 	font-family: 'FjallaOne-Regular';
-	src: url('fonts/FjallaOne-Regular.ttf') format('TrueTypeFont');
+	src: url('fonts/FjallaOne-Regular.ttf') format('truetype');
+
+	/* font-family: 'ScriptMTBold';
+	src: url('fonts/ScriptMTBold.ttf') format('truetype'); */
 }
 
 .modal-body .desc-entreprise{font-size: 14px;}
+
+.logo-footer{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 35px;}
 
 @media(max-width: 991px){
 	header{
@@ -233,7 +151,7 @@ header nav ul li a.active{
 	}
 	header nav{
 		position: absolute;
-		width: 100%;
+		width: 60%;
 		height: calc(100vh - 50px);
 		background: #2196f3;
 		top: 60px;
@@ -256,4 +174,10 @@ header nav ul li a.active{
 	}
 	.contact .coordonnees{max-width: auto;margin-right: 0px!important;margin-bottom: 20px;}
 	.contact .adresse, .contact .email, .contact .telephone{text-align: center;margin-top: 20px;}
+	.logo img{margin-bottom: -10px;}
+
+	#a-propos{margin-bottom: 90px;}
+	#experiences{margin-bottom: 75px;}
+	#projets{margin-bottom: 75px;}
+	#contact{margin-bottom: 75px;}
 }

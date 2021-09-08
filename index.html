@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="icon" type="images/logo.png" href="images/logo.png">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -23,7 +23,9 @@
 	<div class="container-fluid fixed-top">
 		<div class="container">
 			<header>
-				<div class="logo">LOGO</div>
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
 				<nav>
 					<ul>
 						<!-- <li><a href="#">Accueil</a></li> -->
@@ -85,7 +87,7 @@
 	
 				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-12 text-center mb-4">
-						<a href="https://www.qwalit.tech/" target="_blank"><img src="images/qwalit.png" class="rounded-circle" alt=""></a>
+						<img src="images/qwalit.png" class="rounded-circle" alt="">
 						<div class="infos-entreprise">
 							<p class="titre-post mt-4">Développeur front-end</p>
 							<p class="font-weight-bold">Dépuis le 05 octobre 2020</p>
@@ -93,7 +95,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-12 text-center mb-4">
-						<a href="https://www.netexio.com/" target="_blank"><img src="images/netexio.png" class="rounded-circle" alt=""></a>
+						<img src="images/netexio.png" class="rounded-circle" alt="">
 						<div class="infos-entreprise">
 							<p class="titre-post mt-4">SharePoint & Office 365</p>
 							<p class="font-weight-bold">Du 03 juillet 2019 au 03 juillet 2020</p>
@@ -101,7 +103,7 @@
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-12 text-center  mb-4">
-						<a href="http://ib-senegal.com/" target="_blank"><img src="images/ib-senegal.png" class="rounded-circle" alt=""></a>
+						<img src="images/ib-senegal.png" class="rounded-circle" alt="">
 						<div class="infos-entreprise">
 							<p class="titre-post mt-4">Développeur SharePoint</p>
 							<p class="font-weight-bold">Du 16 mai au 17 novembre 2016</p>
@@ -174,19 +176,23 @@
 					</p> -->
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12 formulaire">
-					<form>
+					<form id="myForm">
 						<div class="row">
 							<div class="form-group col-md-6 col-sm-6 col-xs-12">
 								<label for="nom">Votre nom</label>
 								<input type="text" class="form-control" id="nom" style="box-shadow: none;">
+							</div>
+							<div class="form-group col-md-6 col-sm-6 col-xs-12">
+								<label for="prenom">Votre prénom</label>
+								<input type="text" class="form-control" id="prenom" style="box-shadow: none;">
+							</div>
+							<div class="form-group col-md-6 col-sm-6 col-xs-12">
+								<label for="objet">Objet</label>
+								<input type="text" class="form-control" id="objet" style="box-shadow: none;">
 							  </div>
 							<div class="form-group col-md-6 col-sm-6 col-xs-12">
 							  <label for="email">Votre Email</label>
 							  <input type="email" class="form-control" id="email" style="box-shadow: none;">
-							</div>
-							<div class="form-group col-md-12 col-sm-12 col-xs-12">
-							  <label for="objet">Objet</label>
-							  <input type="text" class="form-control" id="objet" style="box-shadow: none;">
 							</div>
 							<div class="form-group col-md-12 col-sm-12 col-xs-12">
 								<label for="message">Message</label>
@@ -194,7 +200,7 @@
 							</div>
 						</div>
 						
-						<p class="text-center"><button type="submit" class="btn btn-primary text-uppercase">envoyer</button></p>
+						<p class="text-center"><button onclick="envoyerMessage()" type="envoyer" name="envoyer" class="btn btn-primary text-uppercase">envoyer</button></p>
 					</form>
 				</div>
 			</div>
@@ -293,8 +299,9 @@
 
 						<p class="text-justify desc-entreprise">
 							Entre autres je me suis diversifier sur d'autres technologies Microsoft (Office 365), à savoir : <br>
-							SHAREPOINT Online, L'outil collaboratif Microsoft TEAMS, Microsoft Planner pour la planification des projets,
-							Création des formulaires et Workflows avec PowerApps et Power automate (Anciennement appelé Flows)
+							L'outil collaboratif Microsoft TEAMS, Microsoft Planner pour la planification des projets,
+							Création des formulaires et Workflows avec PowerApps et Power automate (Anciennement appelé Flows), 
+							et la Gestion électronique des documents avec SHAREPOINT Online.
 						</p>
 					</div>
 					<div class="modal-footer">
@@ -328,8 +335,10 @@
 
 	<div class="container-fluid mt-5 p-3 text-white text-center" style="background-color: #2196f3;">
 		<footer>
-			<p class="font-weight-bold">Mamadou</p>	
-			<p class="p-5">
+			<p class="font-weight-bold logo-footer">
+				Mamadou
+			</p>	
+			<p class="p-3">
 				Vous pouvez également me suivre sur les réseaux sociaux, notamment LinkedIn pour savoir un peu plus sur mes expériences
 				ou sur Youtube pour voir mes démos relatives à tous mes projets que je vais partager sur mon site.
 			</p>
