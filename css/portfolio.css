@@ -1,7 +1,7 @@
 html{scroll-behavior: smooth;}
-#a-propos{margin-bottom: 80px;margin-top: -30px;}
+#about{margin-bottom: 80px;margin-top: -30px;}
 #experiences{margin-bottom: 65px;margin-top: -30px;}
-#projets{margin-bottom: 65px;margin-top: -30px;}
+#projects{margin-bottom: 65px;margin-top: -30px;}
 #contact{margin-bottom: 65px;margin-top: -30px;}
 body{
 	margin: 0;
@@ -147,18 +147,18 @@ header nav ul li a.active{
 	border-bottom: 3px solid #007bb5
 }
 .contact .coordonnees{max-width: 550px;margin-right: 20px;}
-.a-propos .h4, .experiences .h4, .projets .h4, .contact .h4{
+.about .h4, .experiences .h4, .projects .h4, .contact .h4{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bold;
 }
-.a-propos img{width: 50%;height: auto;margin-top: 5px;}
+.about img{width: 50%;height: auto;margin-top: 5px;}
 
 .infos-entreprise .titre-post{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bold;
 	color: rgb(105, 105, 105);
 }
-.projets img{height: 180px;width: 150px;}
+.projects img{height: 180px;width: 150px;}
 
 /* .section-apropos{margin-top: 25px;border-bottom: 3px solid #000;} */
 
@@ -237,9 +237,9 @@ header nav ul li a.active{
 	.contact .adresse, .contact .email, .contact .telephone{text-align: center;margin-top: 20px;}
 	.logo img{margin-bottom: -10px;}
 
-	#a-propos{margin-bottom: 90px;}
+	#about{margin-bottom: 90px;}
 	#experiences{margin-bottom: 75px;}
-	#projets{margin-bottom: 75px;}
+	#projects{margin-bottom: 75px;}
 	#contact{margin-bottom: 75px;}
 	
 	header nav ul li ul li{
