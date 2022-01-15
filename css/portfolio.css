@@ -146,7 +146,7 @@ header nav ul li a.active{
 	border-top: 3px solid #007bb5;
 	border-bottom: 3px solid #007bb5
 }
-.contact .coordonnees{max-width: 550px;margin-right: 20px;}
+/* .contact .coordonnees{max-width: 550px;margin-right: 20px;} */
 .about .h4, .experiences .h4, .projects .h4, .contact .h4{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-weight: bold;
