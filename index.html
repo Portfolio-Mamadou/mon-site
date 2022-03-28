@@ -128,7 +128,7 @@
 			<p class="h4 text-center text-uppercase mt-5">Mes projets réalisés</p>
 
 			<div class="row mt-4">
-				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+				<div class="col-md-6 col-sm-6 col-xs-6 text-center">
 					<img src="images/mamadou.png" class="rounded-circle" alt="">
 					<div class="infos-entreprise">
 						<p class="titre-post mt-4">Mon portfolio</p>
@@ -136,6 +136,17 @@
 							<a href="#" class="btn btn-success box-shadow-none" data-toggle="modal" data-target="#exampleModal" data-backdrop="static" data-keyboard="false">Détails</a>
 							<a href="https://youtu.be/f5WfOWPxLCY" target="_blank" class="btn btn-warning">Démo</a>
 							<a href="https://github.com/Portfolio-Mamadou/mon-site" target="_blank" class="btn btn-primary">Code</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 text-center">
+					<img src="images/logo-bac.jpg" class="rounded-circle" alt="">
+					<div class="infos-entreprise">
+						<p class="titre-post mt-4">Gestion Baccalauréat</p>
+						<p>
+							<a href="#" class="btn btn-success box-shadow-none" data-toggle="modal" data-target="#exampleModalBac" data-backdrop="static" data-keyboard="false">Détails</a>
+							<a href="https://www.youtube.com/watch?v=rF80GbalZh0&list=PL2K5c482eNtLWfL8z8LBhNJO4AuzuJN1A" target="_blank" class="btn btn-warning">Démo</a>
+							<a href="https://github.com/Portfolio-Mamadou/etudiants" target="_blank" class="btn btn-primary">Code</a>
 						</p>
 					</div>
 				</div>
@@ -223,7 +234,7 @@
 	</div>
 
 	<!-- Modal projet 1 -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-size: 14px;">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -246,6 +257,43 @@
 						<span>JQUERY</span><br>
 						<span>Javascript pour le scrolling et le menu du mobile</span><br>
 						<span>Les médias Query pour le responsive design</span><br>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal projet 2 -->
+	<div class="modal fade" id="exampleModalBac" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-size: 14px;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Baccalauréat de l'enseignement secondaire</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<p class="text-justify desc-entreprise">
+							Cette application consiste à afficher la liste des candidats au baccalauréat. Un candidat peut être ajouté avec des informations suivantes :
+							<ul>
+								<li>Nom et prénom</li>
+								<li>Notes de l'examen</li>
+								<li>Moyenne générale</li>
+								<li>Décision du jury</li>
+							</ul>
+							Et éventuellement d'autre d'autres fonctionnalités (CRUD) telles que la modifications et suppression du candidat, avec une recherche et pagination sur la liste.
+							En fonction des notes du candidat sa moyenne générale est automatiquement affichée sur la liste, c'est ainsi que le jury va décider s'il est Admis, Sessionnaire ou Ajourné. 
+							Et pour finir nous pourrons obtenir le relevé des notes du candidat au format PDF, d'autres fonctionnalités seront ajoutées au fur et à mesure de l'avancement sur le projet.
+						</p>
+						<p class="mt-4" style="font-size: 14px;">Technologies utilisés:</p>
+						<span>ANGULAR</span><br>
+						<span>BOOTSTRAP</span><br>
+						<span>ANGULAR MATERIAL</span><br>
+						<span>JSON-SERVER comme source de données</span><br>
 					</div>
 					<div class="modal-footer">
 					<button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>

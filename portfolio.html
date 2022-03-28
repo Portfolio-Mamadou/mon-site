@@ -128,7 +128,7 @@
 			<p class="h4 text-center text-uppercase mt-5">My projects</p>
 
 			<div class="row mt-4">
-				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+				<div class="col-md-6 col-sm-6 col-xs-12 text-center">
 					<img src="images/mamadou.png" class="rounded-circle" alt="">
 					<div class="infos-entreprise">
 						<p class="titre-post mt-4">My portfolio</p>
@@ -136,6 +136,17 @@
 							<a href="#" class="btn btn-success box-shadow-none" data-toggle="modal" data-target="#exampleModal" data-backdrop="static" data-keyboard="false">Details</a>
 							<a href="https://youtu.be/f5WfOWPxLCY" target="_blank"  class="btn btn-warning">Demo</a>
 							<a href="https://github.com/Portfolio-Mamadou/mon-site" target="_blank" class="btn btn-primary">Code</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6 text-center">
+					<img src="images/logo-bac.jpg" class="rounded-circle" alt="">
+					<div class="infos-entreprise">
+						<p class="titre-post mt-4">Bachelor management</p>
+						<p>
+							<a href="#" class="btn btn-success box-shadow-none" data-toggle="modal" data-target="#exampleModalBac" data-backdrop="static" data-keyboard="false">Details</a>
+							<a href="https://www.youtube.com/watch?v=rF80GbalZh0&list=PL2K5c482eNtLWfL8z8LBhNJO4AuzuJN1A" target="_blank" class="btn btn-warning">Demo</a>
+							<a href="https://github.com/Portfolio-Mamadou/etudiants" target="_blank" class="btn btn-primary">Code</a>
 						</p>
 					</div>
 				</div>
@@ -190,39 +201,11 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="col-md-6 col-sm-6 col-xs-12 formulaire">
-					<form id="myForm" method="POST" action="envoyerMail.php">
-						<div class="row">
-							<div class="form-group col-md-6 col-sm-6 col-xs-12">
-								<label for="nom">Votre nom</label>
-								<input type="text" name="nom" class="form-control" id="nom" style="box-shadow: none;">
-							</div>
-							<div class="form-group col-md-6 col-sm-6 col-xs-12">
-								<label for="prenom">Votre prénom</label>
-								<input type="text" name="prenom" class="form-control" id="prenom" style="box-shadow: none;">
-							</div>
-							<div class="form-group col-md-6 col-sm-6 col-xs-12">
-								<label for="objet">Objet</label>
-								<input type="text" name="objet" class="form-control" id="objet" style="box-shadow: none;">
-							  </div>
-							<div class="form-group col-md-6 col-sm-6 col-xs-12">
-							  <label for="email">Votre Email</label>
-							  <input type="email" name="email" class="form-control" id="email" style="box-shadow: none;">
-							</div>
-							<div class="form-group col-md-12 col-sm-12 col-xs-12">
-								<label for="message">Message</label>
-								<textarea class="form-control" id="message" name="message" rows="4" style="box-shadow: none;"></textarea>
-							</div>
-						</div>
-						
-						<p class="text-center"><button onclick="envoyerMessage()" type="envoyer" name="envoyer" class="btn btn-primary text-uppercase">envoyer</button></p>
-					</form>
-				</div> -->
 			</div>
 		</div>
 	</div>
 
-	<!-- Modal projet 1 -->
+	<!-- Modal project 1 -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -249,6 +232,43 @@
 					</div>
 					<div class="modal-footer">
 					<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal project 2 -->
+	<div class="modal fade" id="exampleModalBac" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-size: 14px;">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Bachelor of secondary education</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<p class="text-justify desc-entreprise">
+							This application is to display the list of candidates for the baccalaureate. A candidate can be added with the following information:
+							<ul>
+								<li>Full name</li>
+								<li>Notes of exam</li>
+								<li>Overall average</li>
+								<li>Jury decision</li>
+							</ul>
+							And possibly other other functionalities (CRUD) such as the modification and deletion of the candidate, with a search and pagination on the list.
+							Depending on the candidate's grades, his general average is automatically displayed on the list, so the jury will decide whether he is Admitted, Sessional or Adjourned.
+							And finally we will be able to obtain the candidate's transcript in PDF format, other functionalities will be added as the project progresses.
+						</p>
+						<p class="mt-4" style="font-size: 14px;">Technologies used:</p>
+						<span>ANGULAR</span><br>
+						<span>BOOTSTRAP</span><br>
+						<span>ANGULAR MATERIAL</span><br>
+						<span>JSON-SERVER as Data-cource</span><br>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-dismiss="modal">Fermer</button>
 					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
 				</div>
 			</div>
