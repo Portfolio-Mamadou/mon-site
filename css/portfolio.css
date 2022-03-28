@@ -132,6 +132,10 @@ header nav ul li a.active{
 	background: #007bb5;
 	color: white;
 }
+.fa-whatsapp {
+	background: rgb(11, 175, 11);
+	color: white;
+}
 .icon-contact .bi{
 	color: #007bb5; 
 	background-color: rgb(260, 260, 260);
